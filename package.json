@@ -1,0 +1,34 @@
+{
+  "name": "student-directory-api",
+  "version": "1.0.0",
+  "description": "API REST de gestion d'un annuaire d'étudiants",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theofief/student-directory-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/theofief/student-directory-api/issues"
+  },
+  "homepage": "https://github.com/theofief/student-directory-api#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "supertest": "^7.3.0",
+    "vitest": "^5.0.2"
+  }
+}
