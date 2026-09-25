@@ -69,7 +69,7 @@ router.get('/search', (request, response) => {
 router.get('/:id', (request, response) => {
   const id = parseStudentId(request.params.id);
   if (id === null) {
-    return response.status(400).json({ error: "L'identifiant est invalide" });
+    return response.status(404).json({ error: "L'identifiant est invalide" });
   }
 
   const student = getStudents().find((item) => item.id === id);
